@@ -1,13 +1,32 @@
-# Chick-Norris, the Discord Bot
-###### Una creación Intron014 <p>
-###### Desarrollo comenzó el 10/01/2021
+# Chick-Norris, the Python Discord Bot
+###### Pre-Alpha V.0.0.1
+###### Una creación Intron014
+###### El desarrollo comenzó el 10/01/2021
 
 ---
 
-Este bot todavía está en desarrollo
+Este bot todavía está en las etapas muy tempranas de desarrollo
 
 ---
-**DISCLAIMER**
+
+**ROADMAP:**
+
+- El comienzo: 
+    - [x] Empezar el proyecto
+    - [ ] Terminar de escribir el Roadmap
+- El desarrollo: 
+    - [x] Construir el esqueleto del proyecto 
+    - [x] Comienza a responder a comandos
+    - [ ] Realiza acciones útiles
+    - [ ] Puede interactuar con los usuarios
+- Extras: 
+    - [ ] Slashtags
+    - [ ] Rich Presence Integration
+
+
+---
+**DISCLAIMER:**
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel orci euismod sem rutrum vulputate. Etiam efficitur semper nunc, quis blandit quam ultrices id. Sed laoreet scelerisque diam sit amet pellentesque. Ut vitae lacus ut purus vestibulum viverra eget nec lorem. Pellentesque ut sem id orci dapibus interdum in eu lacus. Praesent consectetur nunc a felis bibendum imperdiet. Praesent commodo neque eget massa iaculis eleifend. Duis quis turpis leo. Nunc lobortis arcu justo, non commodo erat rutrum in. Donec ornare arcu id ligula volutpat, a vulputate nulla elementum. Vivamus ac neque massa. Integer molestie lobortis turpis, at elementum justo lacinia eu. Ut vulputate sodales neque sit amet blandit. Sed a tempor massa, ac dignissim eros. Aliquam sollicitudin luctus magna ut rhoncus.
 
 Sed quis pulvinar sapien. Sed id sodales metus, sit amet sollicitudin quam. Sed faucibus ante et semper vulputate. Nunc varius pulvinar sollicitudin. Suspendisse at dignissim velit. Phasellus commodo ipsum quis lectus efficitur, viverra tincidunt nulla rhoncus. Etiam vehicula nunc quis odio euismod, vel pulvinar sapien convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam semper purus scelerisque, gravida sem a, molestie ante. Morbi aliquam orci non justo lacinia dictum. In et consequat magna. Suspendisse potenti. Phasellus odio leo, efficitur id ante nec, tristique congue eros. Nulla elementum elit pretium purus rutrum tempor. Cras dictum nec velit non commodo.
