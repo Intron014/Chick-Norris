@@ -1,25 +1,38 @@
-import discord #Da main stuff
-import logging #Da logging stuff
+__authors__ = 'Intron014'
 
+import discord
+from discord.ext import commands
+import traceback
+import sys
+import os
+import json
 
-logger = logging.getLogger('discord')
-logger.setLevel(logging.DEBUG)
-handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
-logger.addHandler(handler)
+def gettoken():
+    token_file = open("token.txt", "r")
+    token_string = token_file.read()
+    token_token = token_string.split("\n")
+    bot_token = str(token_token[0])
+    return bot_token
 
-client = discord.Client()
+bot_token = gettoken()
 
-@client.event
+description = "Da simple bot for da simple life"
+bot = commands.Bot(command_prefix=["."], description=description)
+
+@bot.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print('Logged in as')
+    print(bot.user.name)
+    print(bot.user.id)
+    print('------')
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+@bot.event
+async def on_ready():
+    activity = discord.Game(name="Netflix", type=3)
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="a test"))
+    #await bot.change_presence(activity=discord.Game(name="a game"))
+    #await bot.change_presence(activity=discord.Streaming(name="My Stream", url=my_twitch_url))
+    #await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="a song"))
+    print("Bot is ready!")
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
-
-client.run('Nzk3NzgwODk3ODU2MjI1Mjkx.X_rdXA.uWDXpoiK1HMX836H0LpEIjqDdwY')
+bot.run(bot_token)
