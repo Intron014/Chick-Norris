@@ -1,3 +1,5 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/Intron014/Chick-Norris?branch=main)](https://bettercodehub.com/)
+
 # Chick-Norris, the Python Discord Bot
 ###### Pre-Alpha V.0.0.1
 ###### Una creación Intron014
